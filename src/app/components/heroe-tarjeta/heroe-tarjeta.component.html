@@ -1,1 +1,18 @@
-<p>heroe-tarjeta works!</p>
+<div class="card animated fadeIn fast" >
+    <img class="card-img-top" [src]="heroe.img" alt="Card img" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"> {{ heroe.nombre }} </h5>
+      <p class="card-text"> {{ heroe.bio }}</p>
+      <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small> </p>
+
+      <!--Forma 1-->
+      <button (click)="verHeroe()"
+          type="button" class="btn btn-outline-dark btn-block"> Ver más
+      </button>
+
+      <!--Forma 2--> <!--
+      <a [routerLink]="['/heroe', i]" class="btn btn-outline-dark btn-block">
+          Ver detalles
+      </a> -->
+    </div>
+  </div>
