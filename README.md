@@ -1,6 +1,14 @@
 # SinglePageApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+Aplicación con motivo de cómic que muestra una serie de cartas con algunos de los héroes más conocidos del mundo de Marvel y DC desarrollada con Angular 9.1.4
+
+Características:
+
+- Basada en componentes, rutas y servicios.
+
+- Cartas de los héroes con imágen, descripción y un botón para ver los detalles de cada uno. (Data mock para obtención de datos y renderizado del componente).
+
+- Buscador de héroes por letra o nombre.
 
 ## Development server
 
