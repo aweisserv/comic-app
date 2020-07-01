@@ -1,0 +1,30 @@
+<div class="container main-container animated fadeIn fast<">
+
+    <h1>Detalles</h1>
+    <hr>
+    <br>
+    <br>
+
+     <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <img class="card-img" [src]="heroe.img" alt="Card img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ heroe.nombre | uppercase }}</h5>
+              <p class="card-text">{{ heroe.bio }}</p>
+              <p class="card-text">Mundo: {{ heroe.casa | uppercase }}</p>
+              <p class="card-text">Primera aparición: {{ heroe.aparicion | date }}</p>
+            </div>
+          </div>
+        </div>
+     </div>
+
+     <button (click)="volver()"
+        type="button" class="btn btn-outline-dark btn-block" style="max-width: 540px;"> Volver
+     </button>
+
+</div>
+
+

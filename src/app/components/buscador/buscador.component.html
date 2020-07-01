@@ -1,8 +1,17 @@
 <div class="container main-container">
 
-    <h1>Héroes</h1>
+    <h1>Resultado de búsqueda:</h1>
+    <h2>{{ termino }}</h2>
     <br>
     <hr>
+
+    <div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+      <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+                No existen resultados con el término: {{ termino }}
+        </div>
+      </div>      
+    </div>
 
     <div class="card-columns">
 
@@ -13,19 +22,23 @@
             <p class="card-text"> {{ heroe.bio }}</p>
             <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small> </p>
 
-            <!--Forma 1-->
+            <!--Forma 1 
             <button (click)="verHeroe(i)"
                 type="button" class="btn btn-outline-dark btn-block"> Ver más
-            </button>
+            </button>-->
 
-            <!--Forma 2--> <!--
+            <!--Forma 2
             <a [routerLink]="['/heroe', i]" class="btn btn-outline-dark btn-block">
                 Ver detalles
-            </a> -->
+            </a>-->  
           </div>
         </div>
     
     </div>
+
+    <ng-template #noData>
+        <h2>ningún héroe encontrado</h2>
+    </ng-template>
 
 </div>
 
